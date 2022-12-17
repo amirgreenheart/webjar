@@ -1,0 +1,7 @@
+:root {
+  --allow-green: 0 200 83;
+  --allow-green-light: 0 200 83 0.5;
+  --allow-red: 254 86 86;
+  --allew-disabled: 129 127 127;
+  --text-disabled: 0 0 0 0.2;
+}

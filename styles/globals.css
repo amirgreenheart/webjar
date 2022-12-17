@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("./colors.css");
+
+html,
+body {
+  font-family: Dana, sans-serif;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+.rtl {
+  direction: rtl;
+}
+
+.checkboxList[type="checkbox"]:checked {
+  background: #F7F7F7;
+  color: white;
+  border: 2px solid #00C853;
+}
+
+.checkboxList[type="checkbox"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  background: #F7F7F7;
+  border: 2px solid #7B7B7B;
+  border-radius: 4px;
+  color: white;
+}
+
+.checkboxList[type="checkbox"]:after {
+  content: ' ';
+  position: relative;
+  right: 24%;
+  top: 27%;
+  width: 52%;
+  height: 37%;
+  border: solid #00C853;
+  border-width: 0 2px 2px 0;
+  transform: rotateX(180deg) rotateY(0deg) rotateZ(-131deg);
+  display: none;
+}
+
+.checkboxList[type="checkbox"]:checked:after {
+  display: block;
+}
