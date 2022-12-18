@@ -30,8 +30,7 @@ export default function Home({ blogs, categories }: Props) {
     </div>
   )
 }
-const getBlogs = (category?: string) => {
-  console.log('cate:', category)
+const getBlogs = (category?: string | string[]) => {
   return axios.get("/posts", {
     params: {
       limit : 10
